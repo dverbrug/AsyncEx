@@ -16,10 +16,15 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <RootNamespace>Nito.AsyncEx</RootNamespace>
+    <AssemblyName>Nito.AsyncEx.Oop</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>DVerTech</Company>
+    <PackageReleaseNotes>Modified to support only .NET Core 3.1</PackageReleaseNotes>
+    <PackageId>DVerTech.AsyncEx.Oop</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include = "..\..\asink.png" Pack="true" PackagePath="\" />
+    <None Include="..\..\asink.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>

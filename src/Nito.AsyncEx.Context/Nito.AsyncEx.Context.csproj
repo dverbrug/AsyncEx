@@ -16,6 +16,21 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <RootNamespace>Nito.AsyncEx</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>DVerTech</Company>
+    <PackageReleaseNotes>Modified to support only .NET Core 3.1</PackageReleaseNotes>
+    <NeutralLanguage></NeutralLanguage>
+    <AssemblyVersion>5.0.1</AssemblyVersion>
+    <PackageId>DVerTech.AsyncEx.Context</PackageId>
+    <FileVersion>5.0.1</FileVersion>
+    <AssemblyName>Nito.AsyncEx.Context</AssemblyName>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.1|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>

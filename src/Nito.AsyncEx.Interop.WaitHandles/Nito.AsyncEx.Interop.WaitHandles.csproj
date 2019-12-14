@@ -16,10 +16,15 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <RootNamespace>Nito.AsyncEx</RootNamespace>
+    <AssemblyName>Nito.AsyncEx.Interop.WaitHandles</AssemblyName>
+    <Company>DVerTech</Company>
+    <PackageReleaseNotes>Modified to support only .NET Core 3.1</PackageReleaseNotes>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageId>DVerTech.AsyncEx.Interop.WaitHandles</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include = "..\..\asink.png" Pack="true" PackagePath="\" />
+    <None Include="..\..\asink.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">

@@ -5,12 +5,13 @@ Function WriteAndExecute([string]$command) {
 }
 
 WriteAndExecute 'dotnet restore'
+$pack_location = Get-Location
 Push-Location
 try {
     Get-ChildItem 'src' | ForEach-Object {
         $location = $_.FullName
         Write-Output "Entering $location"
         Set-Location $location
-        WriteAndExecute 'dotnet pack -c Release --no-restore'
+        WriteAndExecute 'dotnet pack -c Release --no-restore -o $pack_location'
     }
 } finally { Pop-Location }

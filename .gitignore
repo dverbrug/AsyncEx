@@ -178,3 +178,5 @@ FakesAssemblies/
 *.lock.json
 /.vs
 /tools
+*.snupkg
+*.nupkg

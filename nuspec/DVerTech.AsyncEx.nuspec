@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+
+Create the package
+1 In command line or PowerShell, navigate to your project directory.
+2 Run: nuget pack Nuget.Package.Name.nuspec. If all goes well you should now have a generated .nupkg file.
+  nuget pack nuspec\DVerTech.AsyncEx.nuspec -Symbols
+3. Open the generated . nupkg file in Nuget Package Manager and see if it looks correct.
+4. Publish
+  nuget push "DVerTech.AsyncEx.nupkg" -Source "GitHub"
+
+#Adjust below commands for correct package revision
+#Open PowerShell and cd to project folder
+  cd AsyncEx
+  .\Build.ps1
+# Make sure tests pass!
+  .\Coverage.ps1
+#Push packages to repo
+  nuget push "DVerTech.AsyncEx.Context.5.0.1.nupkg" -Source "GitHub"
+  nuget push "DVerTech.AsyncEx.Coordination.5.0.1.nupkg" -Source "GitHub"
+  nuget push "DVerTech.AsyncEx.Interop.WaitHandles.5.0.1.nupkg" -Source "GitHub"
+  nuget push "DVerTech.AsyncEx.Oop.5.0.1.nupkg" -Source "GitHub"
+  nuget push "DVerTech.AsyncEx.Tasks.5.0.1.nupkg" -Source "GitHub"
+#Make and push enclosing package
+  nuget pack .\nuspec\DVerTech.AsyncEx.nuspec -Symbols
+  nuget push "DVerTech.AsyncEx.5.0.1.nupkg" -Source "GitHub"
+
+-->
+
+
+<package >
+  <metadata>
+    <id>DVerTech.AsyncEx</id>
+    <version>5.0.1</version>
+    <title>Async and Task Helpers</title>
+    <authors>Stephen Cleary, David Verbrugge</authors>
+    <owners>DVerTech</owners>
+    <language>en-US</language>
+    <projectUrl>https://github.com/dverbrug/AsyncEx</projectUrl>
+    <icon>asink.png</icon>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A helper library for the Task-Based Asynchronous Pattern (TAP).</summary>
+    <description>A helper library for the Task-Based Asynchronous Pattern (TAP).</description>
+    <tags>async await async-await task asynchronous nito</tags>
+    <dependencies>
+      <dependency id="DVerTech.AsyncEx.Tasks" version="5.0.1" />
+      <dependency id="DVerTech.AsyncEx.Coordination" version="5.0.1" />
+      <dependency id="DVerTech.AsyncEx.Context" version="5.0.1" />
+      <dependency id="DVerTech.AsyncEx.Oop" version="5.0.1" />
+      <dependency id="DVerTech.AsyncEx.Interop.WaitHandles" version="5.0.1" />
+      <dependency id="Nito.Cancellation" version="1.0.5" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="../asink.png" target="" />
+  </files>
+</package>
