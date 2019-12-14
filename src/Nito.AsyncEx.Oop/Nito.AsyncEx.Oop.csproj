@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <Description>Interfaces and utility methods for combining async with OOP.</Description>
-    <VersionPrefix>5.0.0</VersionPrefix>
+    <VersionPrefix>5.0.1</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     <Authors>Stephen Cleary</Authors>
-    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>async</PackageTags>
-    <PackageProjectUrl>https://github.com/StephenCleary/AsyncEx</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/StephenCleary/AsyncEx/raw/master/AsyncEx.128.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/dverbrug/AsyncEx</PackageProjectUrl>
+    <PackageIcon>asink.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
@@ -19,11 +19,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include = "..\..\asink.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Nito.AsyncEx.Coordination\Nito.AsyncEx.Coordination.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

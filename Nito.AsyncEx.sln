@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3322A27B-E7FF-49A9-8E91-429051BF7EF6}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,6 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		nuspec\Nito.AsyncEx.nuspec = nuspec\Nito.AsyncEx.nuspec
 		README.md = README.md
 		Version.ps1 = Version.ps1
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		C_5_4Users_4David_4OneDrive_4VS-Projects_4repos_4AsyncEx_4global_1json__JsonSchema = http://json.schemastore.org/hemtt-0.6.2
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FBBB0AFC-0473-47AC-A5F8-235524DF8A8A}"

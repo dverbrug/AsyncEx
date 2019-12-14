@@ -1,3 +1,10 @@
+# Upgrading from v5 to v5.0.1
+
+## General
+
+Now built for .NET CORE 3.1 only. Support for older versions is dropped from *.csproj files
+Dependencies are updated to the most recent version available as of 2019-Dec-12
+
 # Upgrading from v4 to v5
 
 ## General

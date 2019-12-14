@@ -1,12 +1,15 @@
-![Logo](AsyncEx.128.png)
+![Logo](asink.png)
 
 # AsyncEx
 
 A helper library for async/await.
 
-Note: This README is for AsyncEx v5 (the current version). For AsyncEx v4, see [here](https://github.com/StephenCleary/AsyncEx/tree/v4).
+Note: This README is for AsyncEx v5.0.1 (David Verbrugge's forked version). 
 
-Supports `netstandard1.3` (including .NET 4.6, .NET Core 1.0, Xamarin.iOS 10, Xamarin.Android 7, Mono 4.6, and Universal Windows 10).
+
+Supports '.NET CORE 3.1'.
+
+For Stephen Cleary's official v5 and other packages, see:
 
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Nito.AsyncEx.svg)](https://www.nuget.org/packages/Nito.AsyncEx/) [![netstandard 1.3](https://img.shields.io/badge/netstandard-1.3-brightgreen.svg)](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) [![netstandard 2.0](https://img.shields.io/badge/netstandard-2.0-brightgreen.svg)](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) [![Code Coverage](https://coveralls.io/repos/github/StephenCleary/AsyncEx/badge.svg?branch=master)](https://coveralls.io/github/StephenCleary/AsyncEx?branch=master) [![Build status](https://ci.appveyor.com/api/projects/status/37edy7t2g377rojs/branch/master?svg=true)](https://ci.appveyor.com/project/StephenCleary/asyncex/branch/master)
 
@@ -16,7 +19,11 @@ Supports `netstandard1.3` (including .NET 4.6, .NET Core 1.0, Xamarin.iOS 10, Xa
 
 ## Getting Started
 
-Install the [NuGet package](http://www.nuget.org/packages/Nito.AsyncEx).
+Install the official v5.0.0 package for 'netstandard1.3' (including .NET 4.6, .NET Core 1.0, Xamarin.iOS 10, Xamarin.Android 7, Mono 4.6, and Universal Windows 10).
+
+[NuGet package](http://www.nuget.org/packages/Nito.AsyncEx).
+
+You can grab the source for my fork if you want .NET CORE 3.1.  Changes are minor and esentially limited to the contents of the *.csproj files and the Nuget package specification file. These changes upgrade the project to .NET CORE 3.1. The XUnit tests remain present and continue to pass.
 
 ## AsyncLock
 
